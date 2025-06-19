@@ -1,0 +1,88 @@
+/* === Alapbeállítások az oldalra === */
+body {
+    font-family: 'Courier New', monospace;  /* Fejlesztői stílusú betűtípus */
+    margin: 0;
+    background: #f8f8f8;  /* Világos háttér, ha nincs háttérkép */
+    color: #000;
+}
+
+/* === Fejléc és navigáció === */
+header {
+    background-color: black; /* Sötét fejléc háttér */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Logó balra, menü jobbra */
+    align-items: center;
+}
+
+/* === Logó megjelenése === */
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+/* === Menü stílus === */
+.menu {
+    list-style: none;       /* Nincs lista ikon */
+    display: flex;          /* Menüpontokat sorba rendezi */
+    flex-direction: row;
+    gap: 50px;              /* Távolság a menüpontok között */
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: deeppink;        /* Élénk link szín */
+    text-decoration: none;  /* Nincs aláhúzás */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: hotpink;         /* Hover effekt: világosabb rózsaszín */
+}
+
+/* === Fő tartalom (bemutatkozás) === */
+.intro {
+    text-align: start;
+    padding: 60px 100px;
+    line-height: 1;
+}
+
+.intro h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+}
+.intro p {
+    margin: 0;
+}
+
+.subtitle {
+    color: deeppink;
+    font-size: 1.5em;
+    justify-content: flex-start;
+}
+
+/* === Technológiai szekció === */
+.wiki {
+    padding: 40px 20px;
+}
+
+.wiki h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.wiki h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
